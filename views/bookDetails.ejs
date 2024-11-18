@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= book.title %> - Details</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #fdf3e7; /* Light brownish-beige background */
+      font-family: 'Georgia', serif; /* Vintage-style font */
+      color: #5b4636; /* Dark brown text color */
+      padding-top: 20px;
+    }
+    .container {
+      max-width: 800px;
+      background: #f9e4c9; /* Softer beige card background */
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border: 1px solid #d2bba3; /* Subtle vintage border */
+      padding: 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      color: #4a3728; /* Darker brown for the title */
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+    .book-details img {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 150px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      border: 2px solid #c3a999; /* Antique-style frame effect */
+    }
+    .book-details p {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+    .book-details strong {
+      color: #6a4b36; /* Warm brown for highlights */
+    }
+    .book-details a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #8b5e3c; /* Rich brown button color */
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      font-weight: bold;
+    }
+    .book-details a:hover {
+      background-color: #6b4528; /* Darker brown for hover */
+    }
+    /* Add a subtle texture to the background */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://www.transparenttextures.com/patterns/linen-light.png');
+      opacity: 0.4;
+      z-index: -1;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><%= book.title %></h1>
+    </header>
+
+    <div class="book-details text-center">
+      <img src="<%= book.cover_url || '/images/default-cover.jpg' %>" alt="<%= book.title %> Cover">
+      <p><strong>Author:</strong> <%= book.author %></p>
+      <p><strong>Rating:</strong> <div class="book-rating">
+        <% for (let i = 1; i <= 5; i++) { %>
+          <% if (i <= Math.floor(book.rating || 0)) { %>
+            <span class="star-filled">★</span>
+          <% } else if (book.rating && i - 1 < book.rating && book.rating < i) { %>
+            <span class="star-half">★</span>
+          <% } else { %>
+            <span class="star-empty">☆</span>
+          <% } %>
+        <% } %>
+        <span class="rating-value"><%= book.rating %>/5</span>
+      </div>
+      </p>
+      <p><strong>Notes:</strong> <%= book.notes || "No notes added yet." %></p>
+      <p><strong>Read on:</strong> <%= book.date_read || "Not specified" %></p>
+      <a href="/">Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>

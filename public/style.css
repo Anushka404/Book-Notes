@@ -1,0 +1,225 @@
+/* General Body Styling */
+
+body {
+  background-image: url('/images/rose petal.jpg'); /* Use your desired background image */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.container {
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for vintage feel */
+  border-radius: 10px;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.container header h1.header-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #6b4f4f;
+}
+
+
+/* Navigation Bar */
+/* Vintage Box Layout for Navbar */
+.nav-container {
+  background-color: #f4efe9; /* Light cream for a vintage feel */
+  border: 2px solid #a67b5b; /* Brown border */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 10px 20px; /* Padding for inner spacing */
+  max-width: 800px; /* Centered box size */
+  margin: 0 auto 30px auto; /* Centering and bottom margin */
+}
+
+/* Navbar links inside the vintage box */
+.nav-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #6b4f4f; /* Deep brown text color */
+  padding: 8px 12px; /* More padding for a box look */
+  border-radius: 8px; /* Rounded corners for links */
+  transition: color 0.3s, background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect with vintage brown color */
+.nav-link:hover {
+  background-color: #e2d4c3; /* Light brown highlight */
+  color: #a67b5b; /* Darker brown text on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+
+
+/* Form Section */
+.form-section {
+  background-color: #f9f7f2;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #a67b5b;
+  margin-bottom: 20px;
+}
+.btn-custom:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.btn-custom {
+  background-color: #a67b5b !important;
+  color: white !important;
+  font-family: 'Raleway', sans-serif;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.btn-custom:hover {
+  background-color: #8c6141;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Book List */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Book Card */
+.book-card {
+  background-color: #fffdf9;
+  border: 1px solid #e2d4c3;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Book Details */
+.book-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6b4f4f;
+  margin-bottom: 10px;
+}
+
+.book-author {
+  font-size: 1rem;
+  font-style: italic;
+  color: #6b4f4f;
+  margin-bottom: 10px;
+}
+
+.book-rating {
+  font-size: 1.2rem;
+  color: #a67b5b;
+  margin-bottom: 15px;
+}
+
+.book-highlight {
+  font-size: 1rem;
+  color: #555;
+  background-color: #f4efe9;
+  padding: 10px;
+  border-left: 5px solid #a67b5b;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+.footer-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Additional Styles */
+.book-cover img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.action-button {
+  background-color: #ad7e37; /* Deep brown background */
+  color: white; /* White text */
+  font-family: 'Georgia', serif; /* Vintage font */
+  font-size: 14px;
+  padding: 10px 20px;
+  border: 2px solid #957341; /* Slightly darker brown border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+  text-align: center;
+}
+
+.action-button:hover {
+  background-color: #8b5d3b; /* Lighter brown on hover */
+  transform: scale(1.05); /* Slight scale on hover for effect */
+}
+
+.delete-button {
+  background-color: #825640; /* A deeper brown for delete button */
+}
+
+.delete-button:hover {
+  background-color: #7a4a39; /* Lighter brown for hover */
+}
+
+/* Optional: Adding a shadow for vintage feel */
+.action-button {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.action-button:active {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); /* Darker shadow when pressed */
+  transform: scale(0.98); /* Slight shrink when clicked */
+}
+
+
+
+
+/* Prevent underline on hover for links inside the book card */
+.book-card-link:hover {
+  text-decoration: none;
+}
+
+
+.book-card:hover .book-title {
+  text-decoration: underline;
+  text-decoration-color: #a67b5b; /* Optional: Underline with brown color */
+}
+
+
+/* Remove the default outline on focus (no blue line on click) */
+.book-card-link:focus {
+  outline: none; /* Prevent the blue outline on focus */
+}

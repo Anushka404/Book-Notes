@@ -1,0 +1,115 @@
+/* Body & Background */
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #faf3e0;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #4b3832;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+.edit-header {
+    background-color: #6c4e24; /* Contrasting background */
+    color: #fff;
+    padding: 20px;
+    border-bottom: 4px solid #8b5d3b;
+    text-align: center;
+}
+
+.edit-header h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Increased font size for prominence */
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Main Form */
+.edit-main {
+    max-width: 600px;
+    margin: 40px auto; /* Added top margin for spacing */
+    padding: 30px; /* Increased padding for better spacing */
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+.edit-book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap for clarity */
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #8b5e34;
+    font-size: 1.1rem; /* Slightly increased font size */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px; /* Increased padding for a better look */
+    font-size: 1rem;
+    border: 1px solid #d3b8ae;
+    border-radius: 5px;
+    background-color: #fff8f0;
+}
+
+textarea {
+    min-height: 120px; /* Increased minimum height for better usability */
+}
+
+/* Submit Button */
+.submit-btn {
+    padding: 12px 25px; /* Better padding for larger buttons */
+    background-color: #a67b5b;
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Slightly rounded corners */
+    font-size: 1.2rem; /* Increased font size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #6b4f4f;
+    transform: scale(1.05); /* Add a hover effect */
+}
+
+/* Back to Home Link */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #a67b5b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+    color: #6b4f4f;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .edit-main {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .edit-header h1 {
+        font-size: 2rem; /* Adjust header font size for mobile */
+    }
+}
