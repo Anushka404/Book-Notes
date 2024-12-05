@@ -1,107 +1,111 @@
 /* Body & Background */
 body {
     font-family: 'Merriweather', serif;
-    background-color: #faf3e0;
-    
+    background-color: #fefaf5; 
+    background-image: url('./images/'); 
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #4b3832;
+    background-repeat: repeat;
+    color: #4b3832; 
     margin: 0;
     padding: 0;
 }
 
 /* Header Styling */
 .edit-header {
-    background-color: #6c4e24; /* Contrasting background */
-    color: #fff;
-    padding: 20px;
-    border-bottom: 4px solid #8b5d3b;
+    background-color: #8e5b74; 
+    color: #fff; 
+    padding: 25px;
+    border-bottom: 4px solid #b26d91; 
     text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .edit-header h1 {
     margin: 0;
-    font-size: 2.5rem; /* Increased font size for prominence */
-    font-family: 'Georgia', serif;
-    text-transform: uppercase;
+    font-size: 2.8rem; 
+    font-family: 'Playfair Display', serif;
     letter-spacing: 2px;
 }
 
 /* Main Form */
 .edit-main {
-    max-width: 600px;
-    margin: 40px auto; /* Added top margin for spacing */
-    padding: 30px; /* Increased padding for better spacing */
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 12px;
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: #fff5f8; 
+    border-radius: 15px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0e3e8; 
 }
 
 /* Form Styling */
 .edit-book-form {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Increased gap for clarity */
+    gap: 18px;
 }
 
 .form-group label {
     font-weight: bold;
-    color: #8b5e34;
-    font-size: 1.1rem; /* Slightly increased font size */
+    color: #b26d91; 
+    font-size: 1.15rem;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 12px; /* Increased padding for a better look */
+    padding: 14px;
     font-size: 1rem;
-    border: 1px solid #d3b8ae;
-    border-radius: 5px;
-    background-color: #fff8f0;
+    border: 1px solid #d6aac2; 
+    border-radius: 6px;
+    background-color: #fff; 
+    transition: border-color 0.3s;
 }
 
-textarea {
-    min-height: 120px; /* Increased minimum height for better usability */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #b26d91; 
+    outline: none;
 }
 
 /* Submit Button */
 .submit-btn {
-    padding: 12px 25px; /* Better padding for larger buttons */
-    background-color: #a67b5b;
+    padding: 14px 30px;
+    background-color: #b26d91; 
     color: #fff;
     border: none;
-    border-radius: 8px; /* Slightly rounded corners */
-    font-size: 1.2rem; /* Increased font size */
+    border-radius: 10px;
+    font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
 }
 
 .submit-btn:hover {
-    background-color: #6b4f4f;
-    transform: scale(1.05); /* Add a hover effect */
+    background-color: #8e5b74; 
+    transform: scale(1.03);
 }
 
 /* Back to Home Link */
 .back-link {
     display: block;
     text-align: center;
-    margin-top: 20px;
-    color: #a67b5b;
+    margin-top: 15px;
+    color: #b26d91; 
     font-weight: bold;
     text-decoration: none;
+    font-size: 1rem;
 }
 
 .back-link:hover {
     text-decoration: underline;
-    color: #6b4f4f;
+    color: #8e5b74;
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
     .edit-main {
-        padding: 20px; /* Reduce padding for smaller screens */
+        padding: 20px;
     }
 
     .submit-btn {
@@ -110,6 +114,6 @@ textarea {
     }
 
     .edit-header h1 {
-        font-size: 2rem; /* Adjust header font size for mobile */
+        font-size: 2.3rem;
     }
 }
