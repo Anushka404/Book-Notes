@@ -5,5 +5,6 @@ CREATE TABLE books (
     author TEXT,
     rating INTEGER,
     notes TEXT,
+    cover_url TEXT,
     date_read DATE
 );
